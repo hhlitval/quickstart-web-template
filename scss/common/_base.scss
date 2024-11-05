@@ -1,0 +1,43 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: $font-size;
+}
+
+body {
+  background: $primary-bg-color;
+  color: $text-color;
+  font-family: $font-main;
+  font-weight: 400;
+  line-height: 1;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: $container-size;
+  padding-inline: clamp(1rem, 0.345rem + 3.27vw, 2.8rem);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: 7.5rem;
+  &-title {
+    font-size: $font-size-title;
+    text-transform: capitalize;
+  }
+  &-subtitle {
+    font-size: $font-size-subtitle;
+    line-height: 1.4;
+    color: $text-color-muted;
+    margin-top: 24px;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

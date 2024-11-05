@@ -1,0 +1,25 @@
+.hero {
+  color: $text-color-white;
+  padding-top: 4.8rem;
+  &-heading {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    padding: clamp(2rem, 1.273rem + 3.64vw, 4rem);
+    line-height: 1.4;
+    background-image: url("/img/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    &__title {
+      font-size: clamp(2.625rem, 1.943rem + 3.41vw, 4.5rem);
+      font-weight: 500;
+      margin-bottom: 8px;
+      flex-wrap: balance;
+    }
+    &__subtitle {
+      font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+    }
+  }
+}

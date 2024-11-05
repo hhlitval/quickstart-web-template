@@ -1,0 +1,10 @@
+.footer {
+  position: fixed; //Unfix me
+  bottom: 0;
+  width: 100%;
+  color: $text-color-footer;
+  font-size: $font-size-footer;
+  background: $footer-bg-color;
+  padding: 1.2rem 0;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+.header {
+  &-container {
+    display: grid;
+    padding-block: 1.8rem;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-nav {
+    @include small-tablet() {
+      display: none;
+    }
+    &__logo {
+      padding: 0.8rem 0;
+      font-size: 1.6rem;
+      font-weight: 450;
+      letter-spacing: -1px;
+    }
+    &__list {
+      display: flex;
+      gap: 5px;
+      justify-content: space-between;
+      padding-inline: 2rem;
+    }
+
+    &__btn {
+      margin-left: auto;
+      &.btn--dark {
+        @include small-tablet() {
+          display: none;
+        }
+      }
+    }
+  }
+}

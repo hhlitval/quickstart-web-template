@@ -1,0 +1,14 @@
+// Common Styles (base setup)
+@import "common/reset";
+@import "common/variables";
+@import "common/mixin";
+@import "common/base";
+
+// Blocks (individual sections)
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/footer";
+
+// Elements (buttons, logos, icons etc.)
+@import "elements/btn";
+@import "elements/burger";
