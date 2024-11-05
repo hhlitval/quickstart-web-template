@@ -204,7 +204,7 @@ body a {
   height: 60vh;
   padding: clamp(2rem, 1.273rem + 3.64vw, 4rem);
   line-height: 1.4;
-  background-image: url("img/hero.png");
+  background-image: url("../img/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
