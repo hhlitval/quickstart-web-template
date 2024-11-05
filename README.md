@@ -21,15 +21,9 @@ The **Quickstart Web Template** is a minimal web template designed for simple or
 
 To use this template, follow the steps below.
 
-### Installation
-
 1. **Clone the Repository**: 
     ```bash
     git clone https://github.com/hhlitval/quickstart-web-template.git
     ```
 2. **You need to have a SCSS compiler installed if you want to compile SCSS to CSS (e.g. Live Sass Compiler Extension for VS Code)**
 3. **Start working** - Begin modifying the template.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
