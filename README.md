@@ -27,3 +27,7 @@ To use this template, follow the steps below.
     ```
 2. **You need to have a SCSS compiler installed if you want to compile SCSS to CSS (e.g. Live Sass Compiler Extension for VS Code)**
 3. **Start working** - Begin modifying the template.
+
+## Live Preview
+
+Check out the live preview of the Simple Developer Portfolio [here](https://hhlitval.github.io/quickstart-web-template).
