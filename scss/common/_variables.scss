@@ -19,4 +19,6 @@ $accent-color: #111111;
 $footer-bg-color: #111111;
 
 $button-dark-hover: #333;
-$border-color: #2a2d341a;
+$border: 1px solid rgba(255, 255, 255, 0.03);
+$box-shadow: 0 2px 2px rgba(0, 0, 0, 0.03), 0 4px 4px rgba(0, 0, 0, 0.03),
+  0 8px 8px rgba(0, 0, 0, 0.03), 0 16px 16px rgba(0, 0, 0, 0.03);

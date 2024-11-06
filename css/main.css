@@ -204,6 +204,15 @@ body a {
           justify-content: space-between;
   padding-inline: 2rem;
 }
+.header-nav__list-btn {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header-nav__list-btn {
+    display: inline-block;
+    margin-top: 12px;
+  }
+}
 .header-nav__list.active {
   display: block;
   font-size: 24px;
@@ -220,6 +229,42 @@ body a {
 }
 .header-nav__btn.btn--dark.active {
   display: block;
+}
+.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1999;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-animation: slideInDown 0.3s ease-in-out;
+          animation: slideInDown 0.3s ease-in-out;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .hero {
@@ -347,4 +392,36 @@ body a {
           transform: rotate(-45deg);
   top: 22px;
   left: 5px;
+}
+
+.back-to-top {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  background-color: #111111;
+  background-color: #f5f5f5;
+  height: 34px;
+  width: 34px;
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.back-to-top.reveal {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=main.css.map */
