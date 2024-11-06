@@ -5,6 +5,7 @@
   height: 20px;
   background: transparent;
   cursor: pointer;
+  z-index: 3;
   @include small-tablet() {
     display: block;
     margin-left: auto;
@@ -39,7 +40,7 @@
       transform: translateY(-100%);
     }
   }
-  &--active {
+  &.open {
     & span {
       &:nth-of-type(1) {
         transform: rotate(45deg);

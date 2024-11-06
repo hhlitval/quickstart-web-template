@@ -16,7 +16,7 @@
       font-size: clamp(2.625rem, 1.943rem + 3.41vw, 4.5rem);
       font-weight: 500;
       margin-bottom: 8px;
-      flex-wrap: balance;
+      text-wrap: balance;
     }
     &__subtitle {
       font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);

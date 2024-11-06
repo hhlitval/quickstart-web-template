@@ -5,22 +5,47 @@
     grid-template-columns: 1fr auto 1fr;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   &-nav {
     @include small-tablet() {
-      display: none;
+      display: block;
+      width: 100%;
+      transform: scaleY(0);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.03), 0 4px 4px rgba(0, 0, 0, 0.03),
+        0 8px 8px rgba(0, 0, 0, 0.03), 0 16px 16px rgba(0, 0, 0, 0.03);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      padding-block: 104px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &.mobile-nav {
+      transform: scaleY(1);
+      transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-delay: 0.2s;
+      background-color: $primary-bg-color;
+      z-index: 3;
     }
     &__logo {
       padding: 0.8rem 0;
       font-size: 1.6rem;
       font-weight: 450;
       letter-spacing: -1px;
+      z-index: 4;
     }
     &__list {
       display: flex;
       gap: 5px;
       justify-content: space-between;
       padding-inline: 2rem;
+
+      &.active {
+        display: block;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+      }
     }
 
     &__btn {
@@ -28,6 +53,9 @@
       &.btn--dark {
         @include small-tablet() {
           display: none;
+        }
+        &.active {
+          display: block;
         }
       }
     }
